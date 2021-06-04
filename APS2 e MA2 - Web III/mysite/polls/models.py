@@ -1,6 +1,6 @@
 import datetime
 
-from mysite.settings import TIME_ZONE
+from django.utils import timezone
 from django.db import models
 
 # Create your models here.
@@ -9,7 +9,8 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def was_published_recently(self):
-        return self.pub_date >= TIME_ZONE.now() - datetime.timedelta(days=1)
+        now = timezone.now()
+        return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete = models.CASCADE)
