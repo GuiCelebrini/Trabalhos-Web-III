@@ -1,5 +1,5 @@
 # Trabalhos Web III #
 
-APS 1 e MA 1 da matéria de Projeto de Sistemas em Internet III
+APS 1, MA 1, APS 2 e MA 2 da matéria de Projeto de Sistemas em Internet III
 
-Os códigos foram em grande parte reescritos, mas alguns têm algumas diferenças para o original
+Útimos trabalhos foram partes de um tutorial de como escrever uma aplicação básica com Django
